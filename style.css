@@ -4,3 +4,141 @@
     box-sizing: border-box;
 }
 
+.login{
+    display: flex;
+    justify-content: space-between;
+    background-color: #13357b;
+    padding: 5px 40px;
+    position:sticky;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon a{
+    border:1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 34px;
+    height: 34px;
+    color: white;
+    margin: 0px 5px;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 8px;
+}
+.register a i{
+    padding: 0px 8px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+    background-color: #F2F2F2;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    /* z-index: -1; */
+}
+
+.logo{
+    font-size: 40px;
+    color: #13357B;
+    margin: 15px;
+}
+.logo i{
+    margin: 0px 5px ;
+}
+
+.header-section-2{
+    display: flex;
+    /* padding-top: 23px; */
+}
+
+.nav{
+    overflow: hidden;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    color: black;
+    height: 80px;
+    /* width: 80px; */
+    text-decoration: none;
+    padding: 26px 10px;
+    font-size: x-large;
+}
+
+.nav:hover .nav-inner-box{
+    transform: translateY(-80px);
+    z-index: -1;
+    
+}
+
+.nav-inner-box{
+    height: 80px;
+    background-color: #13357B;
+    position: relative;
+    transition: .5s ;
+    padding:  26px 20px;
+    
+}
+.nav:hover .nav-item{
+    color: white;
+}
+
+.nav-home{
+    background-color: #13357B;
+    color: white;
+}
+
+
+.button:hover .btn-hover{
+    transform: translateX(132px);
+}
+.button:hover {
+   color: #13357B;
+}
+
+.button {
+    overflow: hidden;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 19px;
+    border: .5px solid #13357B;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 20px;
+    border-radius: 28px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn-hover{
+    height: 41px;
+    width: 130px;
+    position: absolute;
+    margin-top: -32px;
+    margin-left: -21px;
+    border-radius: 28px;
+    background-color:#13357B;
+    color: white;
+    z-index: -1;
+    transition: .3s;
+}
