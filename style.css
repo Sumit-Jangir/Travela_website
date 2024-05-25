@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.page-1{
+    position: relative;
+    height: 100vh;
+}
 .login{
     display: flex;
     justify-content: space-between;
@@ -30,6 +34,10 @@
     color: white;
     margin: 0px 5px;
 }
+.icon a:hover{
+    color: black;
+    background-color: white;
+}
 
 .register{
     display: flex;
@@ -53,8 +61,10 @@
     position: sticky;
     top: 0;
     height: 80px;
-    /* z-index: -1; */
+    width: 100%;
+    z-index: 1;
 }
+
 
 .logo{
     font-size: 40px;
@@ -69,7 +79,11 @@
     display: flex;
     /* padding-top: 23px; */
 }
-
+@media screen and (max-width: 940px){
+    .header-section-2{
+        display: none;
+    }
+}
 .nav{
     overflow: hidden;
 }
@@ -141,4 +155,119 @@
     color: white;
     z-index: -1;
     transition: .3s;
+}
+
+.home{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: url('https://themewagon.github.io/travela/img/carousel-3.jpg');
+    background-size: cover;
+}
+.home-bg{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 0px;
+    
+
+}
+.home-img{
+    height: 100vh;
+    width: 1000px;
+    margin-top: -128px;
+    position: relative;
+    z-index: -1;
+}
+
+.home-content{
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.explore{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.you-like{
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.lorem{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    text-align: center;
+    line-height: 2rem;
+    padding: 15px;
+}
+.home-content-btn{
+    overflow: hidden;
+    height: 48px;
+    padding-top: 10px;
+}
+.btn{
+    color: #13357B;
+    background-color: white;
+}
+
+.home-button{
+    z-index: 1;
+    right: 0px;
+}
+
+.home-search{
+    display: flex;
+    justify-content: center;
+}
+.home-search-inner{
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -75px;
+    position: absolute;
+    background: rgba(19, 53, 123, 0.8);
+    border-radius: 50rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home-search-inner input{
+    height: 50px;
+    width: 100%;
+    border-radius: 50rem;
+    border: none;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+.search-btn{
+    position: absolute;
+    right: 55px;
+    top: 33px;
+    width: 105px;
+    color: white;
+    z-index: 2;
+}
+.search-btn-hover{
+    position: absolute;
+    color: white;
 }
