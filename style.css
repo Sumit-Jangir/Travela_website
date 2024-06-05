@@ -610,20 +610,29 @@
     }
 
 }
+
+.page-4-main{
+    max-width: 1500px;
+}
 .page-4-services{
     max-width: 100%;
 }
 .list{
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
     list-style: none;
     margin: 3rem;
+    line-height: 1.5rem;
 }
 .list-item{
     border: 0.5px solid #13357B;
-    padding: 8px 54px;
+    padding: 8px 0px;
+    width: 140px;
     border-radius: 40px;
+    margin: 20px;
     
     
 }
@@ -638,39 +647,38 @@
 }
 
 .page-4-section-2{
-    width: 90%;
+    width: 95%;
     grid-gap: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .page-4-box{
-    border: 2px solid;
-    height: 270px;
-    /* position: relative; */
-    /* width: 200px; */
-    /* overflow: hidden; */
+    /* height: 20rem; */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
-/* .page-4-innerbox{
-    position: absolute;
-} */
-.page-4-box-6{
-    grid-row-start: 2;
-    grid-row-end: 4;
+
+.page-4-box-3{
+    grid-row-start: 1;
+    grid-row-end: 3;
     grid-column-start: 3;
-    height: 560px;
+    /* height: 620px; */
 }   
+ 
 
 .page-4-box img{
-    border-radius: 15px;
+    border-radius: 10px;
     height: 100%;
     width: 100%;
 }
+
 .page-4-box1{
     padding: 20px;
-    /* width: 200px; */
-    /* border: 2px solid; */
     color: white;
     transition: 1s;
+    position: absolute;
+    z-index: 2;
 }
 .page-4-box1 h2{
     padding-top: 20px;
@@ -679,6 +687,38 @@
     padding: 20px;
 }
 
+.image{
+    transition: 1s;
+}
+.blue{
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 53, 123, 0.4);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: 1s;
+}
+    
 .page-4-box:hover .page-4-box1{
-   transform: translateY(-150px);
+   transform: translateY(-180px);
+}
+.page-4-box:hover .image{
+   scale: 1.2;
+}
+.page-4-box:hover .blue{
+   z-index: 1;
+}
+
+@media screen and (max-width: 450px){
+    .page-4-section-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-4-box{
+        /* width: 80%; */
+        /* margin: 20px; */
+    }
+    .page-4{
+    }
 }
