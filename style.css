@@ -404,7 +404,7 @@
 }
 
 .services{
-    max-width: 900px;
+    /* max-width: 900px; */
     width: 90%;
     text-align: center;
     margin-bottom: 3rem;
@@ -715,10 +715,101 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .page-4-box{
-        /* width: 80%; */
-        /* margin: 20px; */
-    }
-    .page-4{
-    }
+}
+
+
+.page-5-services p{
+    padding: 20px;
+    font-size: large;
+}
+
+.page-5-list{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.page-5-section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    
+}
+.page-5-box1{
+    /* border: 2px solid red; */
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    overflow: hidden;
+    border-radius: 11px;
+    width: 31%;
+    
+}
+.page-5-img1{
+    border-radius: 11px;
+    width: 450px;
+    transition: .5s;
+    
+}
+
+.box1-content{
+    border-radius: 11px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    z-index: 2;
+}
+.box1-content p{
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.page-5-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-78%, -80%);
+    transition: 0.5s;
+    opacity: 0;
+}
+.text-white{
+    color: #fff;
+}
+
+.offer{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-radius: 22px 40px 0px 80px;
+    color: white;
+    z-index: 4;
+}
+.offer p{
+    font-size: 20px;
+   padding: 20px;
+}
+.off-1{
+    background-color: #0dcaf0;
+}
+.off-2{
+    background-color: #ffc107;
+}
+
+.page-5-box1:hover .blue{
+    z-index: 1;
+}
+.page-5-box1:hover .page-5-img1{
+    scale: 1.2;
+}
+.page-5-box1:hover .page-5-logo{
+    opacity: 1;
+    z-index: 2;
 }
