@@ -844,8 +844,53 @@
     top: 0;
 }
 
+.page-8{
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(19, 53, 123, .8), rgba(19, 53, 123, .8)), url('https://themewagon.github.io/travela/img/tour-booking-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 5rem;
+    position: relative;
+}
+.page-8-main{
+    display: flex;
+    align-items: center;
+}
+.page-8-section1{
+    width: 50%;
+}
+.page-8-section1 h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.page-8-section-title{
+    font-size: x-large;
+    display: inline-block;
+    position: relative;
+    width: 125px;
+    padding: 15px 0px;
 
-
+}
+.page-8-section-title::before {
+    content: "";
+    width: 56px;
+    position: absolute;
+    top: 42%;
+    /* left: 12%; */
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -63px;
+    border: 1px solid white;
+}
+.page-8-items{
+    /* font-size: 18px; */
+    line-height: 1.3rem;
+    margin: 30px 0px;
+}
 
 
 @media screen and (max-width: 1220px){
