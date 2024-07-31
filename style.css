@@ -157,7 +157,7 @@
     position: relative;
     padding: 8px 20px;
     border-radius: 28px;
-    color: white;
+    color:#14141f;
     font-weight: 600;
     font-size: 20px;
 }
@@ -377,7 +377,7 @@
 
 .page-2-btn{
     z-index: 3;
-    width: 100px;
+    /* width: 100px; */
 } 
 
 .page-2-btn-hover{
@@ -845,7 +845,7 @@
 }
 
 .page-8{
-    height: 90vh;
+    height: auto;
     width: 100%;
     background: linear-gradient(rgba(19, 53, 123, .8), rgba(19, 53, 123, .8)), url('https://themewagon.github.io/travela/img/tour-booking-bg.jpg');
     background-position: center center;
@@ -858,10 +858,11 @@
 }
 .page-8-main{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .page-8-section1{
     width: 50%;
+    padding: 55px;
 }
 .page-8-section1 h1{
     font-size: 40px;
@@ -892,6 +893,57 @@
     margin: 30px 0px;
 }
 
+.booking-form h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.booking-form p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.booking-form p span {
+    color: #ff0;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group input, .form-group select {
+    width: 48%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    /* margin-bottom: 10px; */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.book-now-btn {
+    background-color:#13357B;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
 
 @media screen and (max-width: 1220px){
     .page-7-item1,.page-7-item2,.page-7-item3,.page-7-item4,.page-7-item5,.page-7-item6{
@@ -899,6 +951,10 @@
     }
     .page-7-item7,.page-7-item8,.page-7-item9,.page-7-item10{
         width: 24%;
+    }
+    .page-8-section1 {
+        width: 50%;
+        padding: 25px;
     }
 }
 @media screen and (max-width: 1050px){
@@ -971,6 +1027,13 @@
         justify-content: space-evenly;
     }
 
+    .page-8-main{
+        flex-direction: column;
+    }
+    .page-8-section1{
+        width: 100%;
+        padding: 20px;
+    }
 
 }
 
@@ -981,6 +1044,19 @@
     }
     .page-6-item2{
         display: none;
+    }
+    .page-8{
+        padding: 1rem;
+    }
+    .form-group {
+        margin-bottom: 0px;
+    }
+    .form-group input, .form-group select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    textarea {
+       margin-bottom: 10px;
     }
 }
 
