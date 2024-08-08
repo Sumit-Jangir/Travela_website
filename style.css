@@ -5,6 +5,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .page-1 {
   position: relative;
   height: 100vh;
@@ -15,6 +20,7 @@
   background-color: #13357b;
   padding: 5px 40px;
   position: sticky;
+  z-index: 33;
 }
 
 .icon {
@@ -143,7 +149,7 @@
 .button {
   overflow: hidden;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 19px;
   margin-left: 19px;
   border: 0.5px solid #13357b;
   text-decoration: none;
@@ -154,11 +160,12 @@
   font-weight: 600;
   font-size: 20px;
 }
+
 .btn-hover {
-  height: 41px;
+  height: 43px;
   width: 140px;
   position: absolute;
-  margin-top: -32px;
+  margin-top: -33px;
   margin-left: -21px;
   border-radius: 28px;
   background-color: #13357b;
@@ -174,41 +181,42 @@
   color: #13357b;
 }
 
-
 /* small screen header */
 
-.smScreen-hdr{
+.smScreen-hdr {
   /* display: flex; */
   flex-direction: column;
   padding: 10px 0px;
+  width: 100%;
+  position: absolute;
   background-color: #f2f2f2;
   display: none;
   transition: margin-top 0.5s ease;
-  z-index: -1;
+  z-index: 30;
   margin-top: -382px;
 }
-.smScreen-hdr.show{
+.smScreen-hdr.show {
+  position: fixed;
+  top: 80px;
   margin-top: 0px;
-  /* display: flex; */
 }
-.smNav{
+.smNav {
   font-size: 20px;
   text-decoration: none;
   padding: 10px 20px;
   color: black;
 }
-.smNav:hover{
+.smNav:hover {
   color: #13357b;
 }
 
-.smNav1{
+.smNav1 {
   color: #13357b;
 }
-.sm-btn{
+.sm-btn {
   width: 140px;
-    z-index: 2;
+  z-index: 2;
 }
-
 
 /* **********Button************ */
 
@@ -227,44 +235,42 @@ a.animated-button {
   color: #fff;
   background-color: #13357b;
   text-decoration: none;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 1px solid #13357b;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 1px solid #13357b;
   border-radius: 28px;
-	/* transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); */
-	transition: 0.3s;
+  /* transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); */
+  transition: 0.3s;
   overflow: hidden;
 }
 a.animated-button:hover {
-  color: #13357b ;
-	/* background-color: transparent; */
-	/* text-shadow: nthree; */
+  color: #13357b;
+  /* background-color: transparent; */
+  /* text-shadow: nthree; */
   /* border-radius: 28px; */
 }
 a.animated-button:hover:before {
   left: 0%;
-	right: auto;
-	width: 100%;
+  right: auto;
+  width: 100%;
   border-radius: 25px;
   z-index: -1;
 }
 a.animated-button:before {
   /* border-radius: 25px; */
   display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #fff;
-	transition: 0.3s;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #000 !important;
+  background: #fff;
+  transition: 0.3s;
 }
-
-
 
 .home {
   height: 87%;
@@ -679,7 +685,7 @@ a.animated-button:before {
   padding: 20px;
 }
 
-.page4-btn{
+.page4-btn {
   padding: 10px 29px;
 }
 
@@ -1006,24 +1012,24 @@ a.animated-button-3 {
   color: #13357b;
   background-color: #fff;
   text-decoration: none;
-	cursor: pointer;
-	display: block;
-	position: relative;
+  cursor: pointer;
+  display: block;
+  position: relative;
   border-radius: 28px;
-	transition: 0.3s;
+  transition: 0.3s;
   overflow: hidden;
 }
 a.animated-button-3:hover {
-  color: #fff ;
+  color: #fff;
   border: 1px solid #fff;
-	/* background-color: transparent; */
-	/* text-shadow: nthree; */
+  /* background-color: transparent; */
+  /* text-shadow: nthree; */
   /* border-radius: 28px; */
 }
 a.animated-button-3:hover:before {
   left: 0%;
-	right: auto;
-	width: 100%;
+  right: auto;
+  width: 100%;
   border-radius: 25px;
   background-color: #13357b;
   z-index: -1;
@@ -1031,15 +1037,15 @@ a.animated-button-3:hover:before {
 a.animated-button-3:before {
   /* border-radius: 25px; */
   display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	background: #13357b;
-	transition: 0.3s;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  background: #13357b;
+  transition: 0.3s;
 }
 
 .form-group {
@@ -1087,41 +1093,41 @@ a.animated-button-2 {
   color: #fff;
   background-color: #13357b;
   text-decoration: none;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #13357b;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid #13357b;
   border-radius: 10px;
-	/* transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); */
-	transition: 0.5s;
+  /* transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); */
+  transition: 0.5s;
   overflow: hidden;
 }
 a.animated-button-2:hover {
-  color: #13357b ;
-	/* background-color: transparent; */
-	/* text-shadow: nthree; */
+  color: #13357b;
+  /* background-color: transparent; */
+  /* text-shadow: nthree; */
   /* border-radius: 28px; */
 }
 a.animated-button-2:hover:before {
   left: 0%;
-	right: auto;
-	width: 100%;
+  right: auto;
+  width: 100%;
   border-radius: 10px;
   z-index: -1;
 }
 a.animated-button-2:before {
   /* border-radius: 25px; */
   display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #000;
-	background: #fff;
-	transition: 0.5s;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #000;
+  background: #fff;
+  transition: 0.5s;
 }
 
 .page-10 {
