@@ -1224,7 +1224,7 @@ a.animated-button-2:before {
   /* z-index: 1; */
 }
 .page-10-search .search-btn {
-  top: 38px;
+  top: 39px;
 }
 
 body {
@@ -1536,12 +1536,12 @@ footer {
   }
   .search-btn {
     position: absolute;
-    right: 55px;
+    right: 27px;
     top: 33px;
     /* width: 105px; */
     color: white;
     z-index: 2;
-  }
+}
 }
 @media screen and (max-width: 360px) {
   .logo {
