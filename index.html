@@ -72,14 +72,26 @@
             </div>
 
             <a class="button" href="">Book Now<div class="btn-hover"></div></a>
-            
-              
+
+
         </div>
 
         <div class="header-section-3">
-            <i class="fa-solid fa-bars"></i>
+            <i id="sm-icon" class="fa-solid fa-bars"></i>
         </div>
     </header>
+
+    <div class="smScreen-hdr">
+        <a class="smNav smNav1" href="">Home</a>
+        <a class="smNav" href="">About </a>
+        <a class="smNav" href="">Packages </a>
+        <a class="smNav" href="">Services </a>
+        <a class="smNav" href="">Blog </a>
+        <a class="smNav" href="">Pages </a>
+        <a class="smNav" href="">Contact </a>
+        <a class="button sm-btn" href="">Book Now<div class="btn-hover"></div></a>
+    </div>
+
     <div class="page-1">
         <div class="home">
             <!-- <img class="home-img" src="https://themewagon.github.io/travela/img/carousel-3.jpg" alt="" width="100%"> -->
@@ -100,7 +112,7 @@
                     <div class="btn-hover home-button"></div>
                 </a>
             </div> -->
-                <a style="padding: 13px 31px" href="#" class="animated-button">Discover Now</a>
+            <a style="padding: 13px 31px" href="#" class="animated-button">Discover Now</a>
         </div>
 
         <div class="home-search">
@@ -810,7 +822,7 @@
                     esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae
                     iste voluptatem fugiat doloribus quasi quo iure officia. </p>
 
-                    <a  href="#" class="animated-button-3">Read More</a>
+                <a href="#" class="animated-button-3">Read More</a>
             </div>
 
             <div class="page-8-section2">
@@ -850,7 +862,9 @@
                                 <textarea placeholder="Special Request"></textarea>
                             </div>
                             <!-- <button type="submit" class="book-now-btn">Book Now</button> -->
-                            <a  href="#" class="animated-button-2"><center>Book Now</center></a>
+                            <a href="#" class="animated-button-2">
+                                <center>Book Now</center>
+                            </a>
                         </form>
                     </div>
                 </div>
@@ -896,7 +910,8 @@
 
                         <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
 
-                        <a style="padding: 10px 18px; margin-top: 20px; width: 142px;;" href="#" class="animated-button thar-three">Read More</a>
+                        <a style="padding: 10px 18px; margin-top: 20px; width: 142px;;" href="#"
+                            class="animated-button thar-three">Read More</a>
                     </div>
 
                     <!-- <div class="page-6-readmore">
@@ -935,7 +950,8 @@
 
                         <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
 
-                        <a style="padding: 10px 18px; margin-top: 20px; width: 142px;;" href="#" class="animated-button thar-three">Read More</a>
+                        <a style="padding: 10px 18px; margin-top: 20px; width: 142px;;" href="#"
+                            class="animated-button thar-three">Read More</a>
                     </div>
 
                     <!-- <div class="page-6-readmore">
@@ -974,7 +990,8 @@
 
                         <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
 
-                        <a style="padding: 10px 18px; margin-top: 20px; width: 142px;;" href="#" class="animated-button thar-three">Read More</a>
+                        <a style="padding: 10px 18px; margin-top: 20px; width: 142px;;" href="#"
+                            class="animated-button thar-three">Read More</a>
                     </div>
 
                     <!-- <div class="page-6-readmore">
@@ -1080,7 +1097,33 @@
         </div>
     </footer>
 
+    <script>
+        let btn = document.querySelector("#sm-icon");
+        let val = true;
+        btn.onclick = () => {
+            console.log("uhybnjk")
+            const smScreenHdr = document.querySelector(".smScreen-hdr");
 
+            if (val) {
+                smScreenHdr.style.display = "flex"; 
+                setTimeout(() => smScreenHdr.classList.add("show"),50); 
+                val = false;
+            } else {
+                smScreenHdr.classList.remove("show");
+                setTimeout(() => smScreenHdr.style.display = "none", 500); 
+                val = true;
+            }
+
+            // if (val) {
+            //     document.querySelector(".smScreen-hdr").style.classList.add("show");
+            //     val = false;
+            // }
+            // else {
+            //     document.querySelector(".smScreen-hdr").style.classList.remove("show");
+            //     val = true;
+            // }
+        }
+    </script>
 </body>
 
 </html>

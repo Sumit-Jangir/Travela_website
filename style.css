@@ -175,6 +175,41 @@
 }
 
 
+/* small screen header */
+
+.smScreen-hdr{
+  /* display: flex; */
+  flex-direction: column;
+  padding: 10px 0px;
+  background-color: #f2f2f2;
+  display: none;
+  transition: margin-top 0.5s ease;
+  z-index: -1;
+  margin-top: -382px;
+}
+.smScreen-hdr.show{
+  margin-top: 0px;
+  /* display: flex; */
+}
+.smNav{
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+.smNav:hover{
+  color: #13357b;
+}
+
+.smNav1{
+  color: #13357b;
+}
+.sm-btn{
+  width: 140px;
+    z-index: 2;
+}
+
+
 /* **********Button************ */
 
 /* .btn1 {
