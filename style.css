@@ -150,7 +150,7 @@
   position: relative;
   padding: 8px 20px;
   border-radius: 28px;
-  color: #bdc1b8;
+  color: #fff;
   font-weight: 600;
   font-size: 20px;
 }
@@ -173,6 +173,63 @@
 .button:hover {
   color: #13357b;
 }
+
+
+/* **********Button************ */
+
+/* .btn1 {
+  padding: 13px 31px;
+  z-index: 20;
+  font-size: 20px;
+  font-weight: 600;
+} */
+
+a.animated-button {
+  /* padding: 13px 31px; */
+  z-index: 20;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #13357b;
+  text-decoration: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 1px solid #13357b;
+  border-radius: 28px;
+	/* transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); */
+	transition: 0.3s;
+  overflow: hidden;
+}
+a.animated-button:hover {
+  color: #13357b ;
+	/* background-color: transparent; */
+	/* text-shadow: nthree; */
+  /* border-radius: 28px; */
+}
+a.animated-button:hover:before {
+  left: 0%;
+	right: auto;
+	width: 100%;
+  border-radius: 25px;
+  z-index: -1;
+}
+a.animated-button:before {
+  /* border-radius: 25px; */
+  display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #fff;
+	transition: 0.3s;
+}
+
+
 
 .home {
   height: 100%;
@@ -268,6 +325,7 @@
   padding: 3rem;
   display: flex;
   justify-content: space-between;
+  z-index: 21;
 }
 
 .home-search-inner input {
@@ -369,6 +427,9 @@
 .page-2-btn {
   z-index: 3;
   /* width: 100px; */
+}
+.page2-btn {
+  width: 170px;
 }
 
 .page-2-btn-hover {
@@ -583,6 +644,10 @@
   padding: 20px;
 }
 
+.page4-btn{
+  padding: 10px 29px;
+}
+
 .image {
   transition: 1s;
 }
@@ -727,6 +792,11 @@
 
 .page-6-img img {
   width: 100%;
+  transition: 0.5s;
+}
+
+.page-6-img img:hover {
+  scale: 1.2;
 }
 
 .img-items {
@@ -892,6 +962,51 @@
   color: #ff0;
 }
 
+a.animated-button-3 {
+  padding: 13px 31px;
+  width: 170px;
+  z-index: 20;
+  font-size: 20px;
+  font-weight: 600;
+  color: #13357b;
+  background-color: #fff;
+  text-decoration: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+  border-radius: 28px;
+	transition: 0.3s;
+  overflow: hidden;
+}
+a.animated-button-3:hover {
+  color: #fff ;
+  border: 1px solid #fff;
+	/* background-color: transparent; */
+	/* text-shadow: nthree; */
+  /* border-radius: 28px; */
+}
+a.animated-button-3:hover:before {
+  left: 0%;
+	right: auto;
+	width: 100%;
+  border-radius: 25px;
+  background-color: #13357b;
+  z-index: -1;
+}
+a.animated-button-3:before {
+  /* border-radius: 25px; */
+  display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	background: #13357b;
+	transition: 0.3s;
+}
+
 .form-group {
   display: flex;
   justify-content: space-between;
@@ -917,7 +1032,7 @@ textarea {
   border-radius: 10px;
 }
 
-.book-now-btn {
+/* .book-now-btn {
   background-color: #13357b;
   color: #fff;
   border: none;
@@ -927,6 +1042,51 @@ textarea {
   width: 100%;
   font-weight: 600;
   font-size: 20px;
+} */
+
+a.animated-button-2 {
+  padding: 13px 31px;
+  z-index: 20;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #13357b;
+  text-decoration: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #13357b;
+  border-radius: 10px;
+	/* transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); */
+	transition: 0.5s;
+  overflow: hidden;
+}
+a.animated-button-2:hover {
+  color: #13357b ;
+	/* background-color: transparent; */
+	/* text-shadow: nthree; */
+  /* border-radius: 28px; */
+}
+a.animated-button-2:hover:before {
+  left: 0%;
+	right: auto;
+	width: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+a.animated-button-2:before {
+  /* border-radius: 25px; */
+  display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000;
+	background: #fff;
+	transition: 0.5s;
 }
 
 .page-10 {
@@ -1335,7 +1495,7 @@ footer {
   }
   .search-btn {
     position: absolute;
-    right: 26px;
+    right: 55px;
     top: 33px;
     /* width: 105px; */
     color: white;
