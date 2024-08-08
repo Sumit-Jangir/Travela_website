@@ -39,39 +39,39 @@
 
         <div class="header-section-2">
             <div class="nav">
-                <a class="nav-item nav-home" href="">Home</a>
+                <a class="nav-item nav-home" href="#home">Home</a>
             </div>
             <div class="nav">
-                <a class="nav-item" href="">About </a>
+                <a class="nav-item" href="#about">About </a>
                 <div class="nav-inner-box"></div>
             </div>
 
             <div class="nav">
-                <a class="nav-item" href="">Services </a>
+                <a class="nav-item" href="#services">Services </a>
                 <div class="nav-inner-box"></div>
             </div>
 
             <div class="nav">
-                <a class="nav-item" href="">Packages </a>
+                <a class="nav-item" href="#packages">Packages </a>
                 <div class="nav-inner-box"></div>
             </div>
 
             <div class="nav">
-                <a class="nav-item" href="">Blog </a>
+                <a class="nav-item" href="#blog">Blog </a>
                 <div class="nav-inner-box"></div>
             </div>
 
             <div class="nav">
-                <a class="nav-item" href="">Pages </a>
+                <a class="nav-item" href="#pages">Pages </a>
                 <div class="nav-inner-box"></div>
             </div>
 
             <div class="nav">
-                <a class="nav-item" href="">Contact </a>
+                <a class="nav-item" href="#contact">Contact </a>
                 <div class="nav-inner-box"></div>
             </div>
 
-            <a class="button" href="">Book Now<div class="btn-hover"></div></a>
+            <a class="button" href="#booking">Book Now<div class="btn-hover"></div></a>
 
 
         </div>
@@ -82,17 +82,17 @@
     </header>
 
     <div class="smScreen-hdr">
-        <a class="smNav smNav1" href="">Home</a>
-        <a class="smNav" href="">About </a>
-        <a class="smNav" href="">Packages </a>
-        <a class="smNav" href="">Services </a>
-        <a class="smNav" href="">Blog </a>
-        <a class="smNav" href="">Pages </a>
-        <a class="smNav" href="">Contact </a>
-        <a class="button sm-btn" href="">Book Now<div class="btn-hover"></div></a>
+        <a class="smNav smNav1" href="#home">Home</a>
+        <a class="smNav" href="#about">About </a>
+        <a class="smNav" href="#packages">Packages </a>
+        <a class="smNav" href="#services">Services </a>
+        <a class="smNav" href="#blog">Blog </a>
+        <a class="smNav" href="#pages">Pages </a>
+        <a class="smNav" href="#contact">Contact </a>
+        <a class="button sm-btn" href="#booking">Book Now<div class="btn-hover"></div></a>
     </div>
 
-    <div class="page-1">
+    <div id="home" class="page-1">
         <div class="home">
             <!-- <img class="home-img" src="https://themewagon.github.io/travela/img/carousel-3.jpg" alt="" width="100%"> -->
             <div class="home-bg"></div>
@@ -123,7 +123,7 @@
         </div>
     </div>
 
-    <div class="page-2">
+    <div id="about" class="page-2">
         <div class="page-2-inner">
             <div class="page-2-img">
                 <img src="https://themewagon.github.io/travela/img/about-img.jpg" alt="">
@@ -187,7 +187,7 @@
         </div>
     </div>
 
-    <div class="page-3">
+    <div id="services" class="page-3">
         <div class="page-3-main">
             <div class="services">
                 <h5 class="section-title">SERVICES</h5>
@@ -430,7 +430,7 @@
         </div>
     </div>
 
-    <div class="page-5">
+    <div id="pages" class="page-5">
         <div class="page-3-main page-5-main">
             <div class="services page-5-services">
                 <h5 class="section-title">EXPLORE TOUR</h5>
@@ -533,7 +533,7 @@
         </div>
     </div>
 
-    <div class="page-6">
+    <div id="packages" class="page-6">
         <div class="page-3-main page-6-main">
             <div class="services page-5-services">
                 <h5 class="section-title">PACKAGES</h5>
@@ -810,7 +810,7 @@
         </div>
     </div>
 
-    <div class="page-8">
+    <div id="booking" class="page-8">
         <div class="page-8-main">
             <div class="page-8-section1">
                 <h5 class="page-8-section-title">BOOKING</h5>
@@ -872,11 +872,11 @@
         </div>
     </div>
 
-    <div class="page-9">
+    <div id="blog" class="page-9">
         <div class="page-3-main page-6-main">
             <div class="services page-5-services">
-                <h5 class="section-title">PACKAGES</h5>
-                <h1>Awesome Packages</h1>
+                <h5 class="section-title">OUR BLOG</h5>
+                <h1>Popular Travel Blogs</h1>
             </div>
 
             <div class="page-5-section2">
@@ -1030,7 +1030,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="contact">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Get In Touch</h3>
@@ -1097,33 +1097,7 @@
         </div>
     </footer>
 
-    <script>
-        let btn = document.querySelector("#sm-icon");
-        let val = true;
-        btn.onclick = () => {
-            console.log("uhybnjk")
-            const smScreenHdr = document.querySelector(".smScreen-hdr");
-
-            if (val) {
-                smScreenHdr.style.display = "flex"; 
-                setTimeout(() => smScreenHdr.classList.add("show"),50); 
-                val = false;
-            } else {
-                smScreenHdr.classList.remove("show");
-                setTimeout(() => smScreenHdr.style.display = "none", 500); 
-                val = true;
-            }
-
-            // if (val) {
-            //     document.querySelector(".smScreen-hdr").style.classList.add("show");
-            //     val = false;
-            // }
-            // else {
-            //     document.querySelector(".smScreen-hdr").style.classList.remove("show");
-            //     val = true;
-            // }
-        }
-    </script>
+        <script src="script.js"></script>
 </body>
 
 </html>
