@@ -9,7 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .page-1 {
   position: relative;
   height: 100vh;
@@ -1325,7 +1324,6 @@ footer {
   color: white;
 }
 
-
 @media screen and (max-width: 1220px) {
   .page-7-item1,
   .page-7-item2,
@@ -1536,12 +1534,15 @@ footer {
   }
   .search-btn {
     position: absolute;
-    right: 27px;
+    right: 55px;
     top: 33px;
     /* width: 105px; */
     color: white;
     z-index: 2;
-}
+  }
+  .bottom-btn {
+    right: 27px;
+  }
 }
 @media screen and (max-width: 360px) {
   .logo {
