@@ -238,9 +238,7 @@ a.animated-button {
 }
 a.animated-button:hover {
   color: #13357b;
-  /* background-color: transparent; */
-  /* text-shadow: nthree; */
-  /* border-radius: 28px; */
+ 
 }
 a.animated-button:hover:before {
   left: 0%;
@@ -729,8 +727,6 @@ a.animated-button:before {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 25px;
-  /* border: 2px solid red; */
-  /* height: 100%; */
   width: 90%;
 }
 .page-5-box1 {
